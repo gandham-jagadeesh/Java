@@ -3,25 +3,34 @@
  
 ## Lecture - 1 ```31-12-2024```: 
  ### Topics
--  class
-- Objects
-- Constructor
-- Constuctor Overloading
-- this
-- [this() keyword](#this)
-- new keyword
--  Wrapper class
-- final keyword -> primitive Data types,objects
-- Garbage Collection 
+    -  class
+    - Objects
+    - Constructor
+    - Constuctor Overloading
+    - this
+    - [this() keyword](#this)
+    - new keyword
+    -  Wrapper class
+    - final keyword -> primitive Data types,objects
+    - Garbage Collection 
     - [  ] Finalize Method 
-    - [  ] @Override 
-    - [  ] throws Throwable 
-- [  ] Packages 
+        - [  ] @Override 
+        - [  ] throws Throwable 
+    - [  ] Packages 
 
 
-
-
-
+## lecture -2 ```04-01-2025```
+ ### topics
+    packages
+    import
+    how jvm run time search for packages
+    static keyword
+    static vs nonstatic context
+    calling two non static methods : fun( greeting() ) ->  outer one will be taken care of object both class related to same obj
+    static block -> only run once when class is loaded no matter how many objects we created
+    [x] innerclasses : nested classes can be static 
+    Internal workings of System.out.println()
+    singleton class 
 
 ### this()
 - without this()
