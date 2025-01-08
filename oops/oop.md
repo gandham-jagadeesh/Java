@@ -32,6 +32,45 @@
     Internal workings of System.out.println()
     singleton class 
 
+## lecture - 3 `08-01-2025`
+ ### topics
+    Inheritance
+        - super keyword
+        - parent reference child object  creation : Parent ref = new child(); 
+        - private keyword   -> subclasses can call construtor of parent class but can't access baseclass members use setter and getter 
+        - protected keyword -> subclasses can access members of base class if baseclasses members are protected
+        - Parent class super() -> calls object() constructor of object class which is the base class of the any class in java
+        - Datatype ref = new child -> datatype is what matters (like access only related to Datatype not child class memebers)
+        - Types of inheritance ->  
+                                    1.Single inheritance
+                                    2.multilevel
+                                    3.multiple [x]
+                                    4.hierarchial
+                                    5.hydrid [x]
+    Polymorphism
+        - compile time / static Polymorphism : method Overloading
+        - run time Polymorphism / dynamic Polymorphism : method Overriding : body can be diff but rest should be same        
+        - parent ref = new child : if parent,child contains same method ref will call child method not parent one's
+        - dynamic method dispatch / late binding
+        - final keyword
+        - final class -> all are final
+        - static methods can't over ride due to the its doesn't depend on the object but it can inherit
+
+    Encapsulation
+        - wrapping up the members and methods in a class
+        - build stuff with out exposing (encaps) and show only useful stuff (Abstracts)
+    
+    Abstraction
+        - show essential info hide valuable information
+        - ex: car
+        - ArrayList example : using them without knowing the internals
+    
+    Data hiding:
+        - hiding data 
+        - ex: Arraylist interals array : can't access directly
+        - wrapping up the object like methods and stuff is Encapsulation
+
+
 ### this()
 - without this()
  ```java
@@ -82,3 +121,5 @@ class Student {
 - Nested Interface,Abstract classes,Interface
 - static classes
 - inner classes
+- upCasting
+- early binding and lazy binding : final keyword methods
