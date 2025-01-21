@@ -70,6 +70,11 @@
         - ex: Arraylist interals array : can't access directly
         - wrapping up the object like methods and stuff is Encapsulation
 
+## lecture 4 `15-01-2024`
+### Topics
+    - Access Modifiers : private,public,default,protected
+    
+
 
 ### this()
 - without this()
@@ -123,3 +128,20 @@ class Student {
 - inner classes
 - upCasting
 - early binding and lazy binding : final keyword methods
+- compareTo method vs str1.equals() method
+
+
+## object typecasting
+     to check whether an object is an instace of a particular class
+     java16 object instanceof class  ex: student instanceof Student -> checks to see whether student is an instance of Student
+     Student stu = (Student) obj -> typecasting and type safety
+     single line -> java 16     if (o instanceof Trainee trainee) -> checks and cast in one go
+
+## ComparatorInterface
+    class extends comparatorInterface so we can implement compareTo() to sort based on our own predefined objects
+    when sort compareTo() will be used to sort the objects
+    ex:collections.sort(students)
+
+## Equals and hashcode Methods
+    check to see identify between objects : ex : sid1,sid2 with same ids are consider equal objects
+    used in hashset,linkedlistset,hashmap

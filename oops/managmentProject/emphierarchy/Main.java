@@ -27,11 +27,11 @@ public class Main {
 
         // Find an employee with id
         int id = 101;
-        Employee emp = employeeOperation.findEmployeeById(id);
-        System.out.println(emp.getId());
+        Employee emp = employeeOperation.findEmployeeById(0);
+        //System.out.println(emp.getId());
         
         // Display all the employees
-        employeeOperation.showAllEmployees();
+        //employeeOperation.showAllEmployees();
         // Task to do later
         // Ask user to select an option
         // 1 - To add new Employee

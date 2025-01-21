@@ -22,6 +22,7 @@
         3. https://leetcode.com/problems/spiral-matrix-iv/description/
 
 # Lecture : week 3.1 :
+- ## Hashing and HashMaps
  - ## Concepts
   -  Hashing and HashMaps
   -  understanding hashmap and understand how to iter over map
@@ -30,3 +31,7 @@
   - why use sets to iterate maps
   - learn syntax and understand internals of hashmaps and hashsets
   - learn time complexity of that
+
+ - class
+ - 1. https://leetcode.com/problems/two-sum/
+ - 2. https://leetcode.com/problems/contiguous-array/description/

@@ -1,6 +1,7 @@
 package emphierarchy.service;
 
 import emphierarchy.model.Employee;
+import emphierarchy.inputexception.RecordNotFoundException;
 
 public class EmployeeOperationImpl implements EmployeeOperation{
 
@@ -31,7 +32,6 @@ public class EmployeeOperationImpl implements EmployeeOperation{
     }
 
     public Employee findEmployeeById(int id) {
-        System.out.println(id);
         for(Employee emp:employees){
             if(emp != null){
                 if(emp.getId() == id)
@@ -39,6 +39,6 @@ public class EmployeeOperationImpl implements EmployeeOperation{
             }
                
         }
-        return null;
+        throw new RecordNotFoundException("Record not Found Exception");
     }
 }
