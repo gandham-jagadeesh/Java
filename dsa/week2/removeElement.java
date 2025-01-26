@@ -1,4 +1,5 @@
 // Sorting approach
+import java.util.*;
 
 class Solution {
     public int removeElement(int[] nums, int val) {
@@ -28,7 +29,7 @@ class Solution {
 
 // Two pointers
 
-class Solution {
+class Solutions {
     public int removeElement(int[] nums, int val) {
     int start = 0;
     int size = nums.length;
