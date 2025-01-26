@@ -45,7 +45,7 @@ public class Solution {
 
         for(int r=0; r < rsize; r++){
             List<Integer> rw = arr.get(r);
-            int start  = 0;
+            int start  = 0;                  
             int end  = rw.size()-1;
             while(start <= end){
                 int val = rw.get(start);

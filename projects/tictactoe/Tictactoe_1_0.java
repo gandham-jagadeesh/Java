@@ -13,19 +13,24 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class Tictactoe_1_0 {
-
+    public static void playerDrawMessage(JFrame outer){
+        JOptionPane.showMessageDialog(outer,"draw");
+    }
     public static Boolean checkFilled(JButton[] arr){
+        int count = 0;
        for(JButton b:arr){
-        if(b.getIcon() == null){
-            return false;
+        if(b.getIcon() != null){
+            count+=1;
         }
        }
-       return true;
+       if(count == 9){
+        return true;
+       }
+       return false;
     }
 
 
     public static void checkWinner(JButton[] arr,ImageIcon playerx,ImageIcon player_0,JFrame outer){
-        System.out.print("called winner function");
         //check first row or second row or thirdrow for player1
         //[0 1 2]
         //[3 4 5]
@@ -120,20 +125,28 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b1.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-
-                if(!checkFilled(arr)){
-                checkWinner(arr, player1_x_resized, player2_0_resized, window);
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
                 }
-
                 if(isValid[0]){
                     b1.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b1.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b1.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });
@@ -143,18 +156,29 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b2.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
+
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
                 }
                 if(isValid[0]){
                     b2.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b2.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b2.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });
@@ -163,18 +187,28 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b2.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
                     b2.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b2.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b2.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });
@@ -183,18 +217,28 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b3.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
                     b3.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b3.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b3.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });
@@ -203,18 +247,28 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b4.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
                     b4.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b4.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b4.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });
@@ -223,21 +277,30 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b5.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
-                
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
                     b5.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
+
                     b5.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b5.setBackground(Color.orange);
                 isValid[0]=!isValid[0];
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
             }
         });
 
@@ -245,19 +308,29 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b6.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
                     b6.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
                     b6.setIcon(player2_0_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 b6.setBackground(Color.orange);
                 isValid[0]=!isValid[0];
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
             }
         });
 
@@ -266,19 +339,29 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b7.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     b7.setIcon(player1_x_resized);
                 }
                 else{
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     b7.setIcon(player2_0_resized);
                 }
                 b7.setBackground(Color.orange);
                 isValid[0]=!isValid[0];
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
             }
         });
 
@@ -286,19 +369,29 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b8.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
+                if(checkFilled(arr)){
+                    playerDrawMessage(window);
+                }
                 if(isValid[0]){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     b8.setIcon(player1_x_resized);
                 }
                 else{
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     b8.setIcon(player2_0_resized);
                 }
                 b8.setBackground(Color.orange);
                 isValid[0]=!isValid[0];
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
             }
         });
 
@@ -306,18 +399,25 @@ public class Tictactoe_1_0 {
             @Override
             public void mouseClicked(MouseEvent e){
                 if(b9.getIcon() != null){
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     return;
                 }
-                if(!checkFilled(arr)){
-                    checkWinner(arr, player1_x_resized, player2_0_resized, window);
-                    }
                 if(isValid[0]){
                     b9.setIcon(player1_x_resized);
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                 }
                 else{
+                    if(checkFilled(arr)){
+                        playerDrawMessage(window);
+                    }
                     b9.setIcon(player2_0_resized);
                 }
                 b9.setBackground(Color.orange);
+                checkWinner(arr, player1_x_resized, player2_0_resized, window);
                 isValid[0]=!isValid[0];
             }
         });

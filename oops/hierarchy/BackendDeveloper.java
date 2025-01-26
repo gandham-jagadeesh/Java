@@ -1,5 +1,6 @@
 package hierarchy;
 
+
 public class  BackendDeveloper extends Developer{
 
     private String database;

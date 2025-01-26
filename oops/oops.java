@@ -21,8 +21,8 @@ class Student{
 }
 
     public static void main(String args[]){
-         Student std1 = new Student("5f1","jaggu",25,"cse");
+         Student std1 = new oops.Student("5f1","jaggu",25,"cse");
          std1.getStudentrollno();
-        System.out.println("This is Awesome")
+        System.out.println("This is Awesome");
     }
 }

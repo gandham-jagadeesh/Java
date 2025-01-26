@@ -65,6 +65,9 @@ public class rotateMatrix{
 
     public static void main(String args[]){
         List<List<Integer>> arr = new ArrayList<>();
+
+        List<Integer> row = new ArrayList<>();
+        
         arr.add(new ArrayList<>());
         arr.add(new ArrayList<>());
         arr.add(new ArrayList<>());
